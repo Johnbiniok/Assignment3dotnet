@@ -13,3 +13,8 @@ $(function(){
         $('#toast').toast({ autohide: false }).toast('show');
     });
 });
+$(document).on('keyup', function (e) {
+    if(e.key === "Escape"){
+        $('#toast').toast({ autohide: false }).toast('hide');
+    }
+});
