@@ -124,7 +124,7 @@ $(function(){
             $('#green').prop('checked', true);
         }
     });*/
-    $( '#submit' ).on('submit',function(e) {
+    $( '#submit' ).on('click',function(e) {
         e.preventDefault();
         if ($("#birthdayForm input:checkbox:checked").length > 0)
         {
@@ -132,9 +132,9 @@ $(function(){
         }
         else
         {
-            var toast = new Audio('media/toast.wav');
-            // TODO: create toast when submitted
 
+            // TODO: create toast when submitted
+                var toast = new Audio('media/toast.wav');
                 e.preventDefault();
                 // first pause the audio (in case it is still playing)
                 toast.pause();
