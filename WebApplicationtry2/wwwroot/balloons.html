@@ -32,7 +32,19 @@
 <!-- content -->
 <div class="container">
     <h1 id="randomAnimate" class="animated">Happy Birthday!</h1><hr />
+    <div id="toast" class="toast">
+        <div class="toast-header">
+            <strong class="mr-auto" id="product" data-target="productName">Product Name</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            Discount Code: <strong id="code">testing</strong>
+        </div>
+    </div>
     <form role="form" id="birthdayForm">
+
         <div class="row">
                 <div class="col-sm">
                     <div class="form-group">
@@ -59,6 +71,10 @@
                                 <input type="checkbox" class="form-check-input" id="blue">
                                 <label class="form-check-label" for="blue">Blue balloons</label>
                             </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="check">
+                                <label class="form-check-label" for="check">Check All</label>
+                            </div>
                         </div>
                     </div>
                     <button type="button" class="btn btn-outline-primary mt-3" id="submit">Submit</button>
@@ -75,6 +91,7 @@
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <!-- popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <!-- bootstrap -->
